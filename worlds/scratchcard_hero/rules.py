@@ -5,7 +5,6 @@ from typing import TYPE_CHECKING
 from rule_builder.options import OptionFilter
 from rule_builder.rules import Has, HasAll, Rule
 
-from .items import ITEMS
 from .regions import ENTRANCES
 from .locations import EVENTS
 
@@ -19,23 +18,27 @@ def set_all_rules(world: ScratchcardHeroWorld) -> None:
 
 
 def set_all_entrance_rules(world: ScratchcardHeroWorld) -> None:
+    menu_to_map_1 = world.get_entrance(ENTRANCES.menu_map_1)
     map_1_to_map_2 = world.get_entrance(ENTRANCES.map_1_2)
     map_2_to_map_3 = world.get_entrance(ENTRANCES.map_2_3)
     map_3_to_endless = world.get_entrance(ENTRANCES.map_3_endless)
 
-    can_proceed_to_map_2 = Has(EVENTS.map_1_boss)
+    can_proceed_to_map_1 = Has("Map 1")
+    world.set_rule(menu_to_map_1, can_proceed_to_map_1)
+
+    can_proceed_to_map_2 = Has(EVENTS.map_1_boss[1])
     if world.options.must_find_maps:
-      can_proceed_to_map_2 = can_proceed_to_map_2 & Has(ITEMS.map_2[0])
+      can_proceed_to_map_2 = can_proceed_to_map_2 & Has("Map 2")
     world.set_rule(map_1_to_map_2, can_proceed_to_map_2)
 
-    can_proceed_to_map_3 = Has(EVENTS.map_2_boss)
+    can_proceed_to_map_3 = Has(EVENTS.map_2_boss[1])
     if world.options.must_find_maps:
-      can_proceed_to_map_3 = can_proceed_to_map_3 & Has(ITEMS.map_3[0])
+      can_proceed_to_map_3 = can_proceed_to_map_3 & Has("Map 3")
     world.set_rule(map_2_to_map_3, can_proceed_to_map_3)
 
-    can_proceed_to_endless = Has(EVENTS.map_3_boss)
+    can_proceed_to_endless = Has(EVENTS.map_3_boss[1])
     if world.options.must_find_maps:
-      can_proceed_to_endless = can_proceed_to_endless & Has(ITEMS.endless[0])
+      can_proceed_to_endless = can_proceed_to_endless & Has("Endless")
     world.set_rule(map_3_to_endless, can_proceed_to_endless)
 
 

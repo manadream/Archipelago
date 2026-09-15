@@ -12,7 +12,7 @@ class ScratchcardHeroWebWorld(WebWorld):
 
     setup_en = Tutorial(
         "Multiworld Setup Guide",
-        "A guide to setting up APQuest for MultiWorld.",
+        "A guide to setting up Scratchcard Hero for MultiWorld.",
         "English",
         "setup_en.md",
         "setup/en",

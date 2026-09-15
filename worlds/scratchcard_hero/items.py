@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+import json
+import os
+
 from typing import TYPE_CHECKING
 
 from BaseClasses import Item, ItemClassification
@@ -7,25 +10,39 @@ from BaseClasses import Item, ItemClassification
 if TYPE_CHECKING:
     from .world import ScratchcardHeroWorld
 
-class ITEMS:
-  filler = ["Filler",ItemClassification.filler]
-  trap = ["Trap",ItemClassification.trap]
-  map_2 = ["Map 2",ItemClassification.progression]
-  map_3 = ["Map 3",ItemClassification.progression]
-  endless = ["Endless",ItemClassification.progression]
-  d3 = ["3DD3",ItemClassification.progression]
-
 ITEM_NAME_TO_ID = {}
 ITEM_NAME_TO_CLASSIFICATION = {}
+ITEMS = []
+TRAPS = []
+FILLER = []
 
-def initialize():
-    i = 1
-    for attr in dir(ITEMS):
-        if not attr.startswith("__"):
-            item = getattr(ITEMS, attr)
-            ITEM_NAME_TO_ID[item[0]] = i
-            ITEM_NAME_TO_CLASSIFICATION[item[0]] = item[1]
-            i += 1
+def _add_items_from_json(data, id_start, classification):
+    i = id_start
+    for item in data:
+        ITEM_NAME_TO_ID[item] = i
+        ITEM_NAME_TO_CLASSIFICATION[item] = classification
+        i += 1
+        if classification == ItemClassification.trap:
+          TRAPS.append(item)
+        elif classification == ItemClassification.filler:
+          FILLER.append(item)
+        else:
+          ITEMS.append(item)
+
+
+def _initialize():
+    with open(os.path.join(os.path.dirname(__file__), 'items_progression.json'), 'r') as file:
+        _add_items_from_json(json.loads(file.read()), 1000, ItemClassification.progression)
+    with open(os.path.join(os.path.dirname(__file__), 'items_card.json'), 'r') as file:
+        _add_items_from_json(json.loads(file.read()), 2000, ItemClassification.useful)
+    with open(os.path.join(os.path.dirname(__file__), 'items_gadget.json'), 'r') as file:
+        _add_items_from_json(json.loads(file.read()), 3000, ItemClassification.useful)
+    with open(os.path.join(os.path.dirname(__file__), 'items_filler.json'), 'r') as file:
+        _add_items_from_json(json.loads(file.read()), 4000, ItemClassification.filler)
+    with open(os.path.join(os.path.dirname(__file__), 'items_trap.json'), 'r') as file:
+        _add_items_from_json(json.loads(file.read()), 5000, ItemClassification.trap)
+
+_initialize()
 
 class ScratchcardHeroItem(Item):
     game = "Scratchcard Hero"
@@ -33,8 +50,8 @@ class ScratchcardHeroItem(Item):
 
 def get_random_filler_item_name(world: ScratchcardHeroWorld) -> str:
     if world.random.randint(0, 99) < world.options.trap_chance:
-        return ITEMS.trap[0]
-    return ITEMS.filler[0]
+        return TRAPS[world.random.randint(0, len(TRAPS)-1)]
+    return FILLER[world.random.randint(0, len(FILLER)-1)]
 
 
 def create_item_with_correct_classification(world: ScratchcardHeroWorld, name: str) -> ScratchcardHeroItem:
@@ -43,17 +60,10 @@ def create_item_with_correct_classification(world: ScratchcardHeroWorld, name: s
 
 
 def create_all_items(world: ScratchcardHeroWorld) -> None:
-    itempool: list[Item] = [
-        world.create_item(ITEMS.d3[0])
-    ]
+    itempool: list[Item] = []
 
-    if world.options.must_find_maps:
-        itempool.append([
-            world.create_item(ITEMS.map_2[0]),
-            world.create_item(ITEMS.map_3[0]),
-            world.create_item(ITEMS.endless[0]),
-        ])
-
+    for item in ITEMS:
+      itempool.append(world.create_item(item))
 
     number_of_items = len(itempool)
     number_of_unfilled_locations = len(world.multiworld.get_unfilled_locations(world.player))
@@ -63,5 +73,12 @@ def create_all_items(world: ScratchcardHeroWorld) -> None:
 
     world.multiworld.itempool += itempool
 
-    starting_card = world.create_item(ITEMS.d3[0])
-    world.push_precollected(starting_card)
+    world.push_precollected(world.create_item("3DD3"))
+    if not world.options.must_find_maps:
+        world.push_precollected(world.create_item("Map 1"))
+        world.push_precollected(world.create_item("Map 2"))
+        world.push_precollected(world.create_item("Map 3"))
+        world.push_precollected(world.create_item("Endless"))
+    else:
+      if world.options.start_with_first_map:
+        world.push_precollected(world.create_item("Map 1"))

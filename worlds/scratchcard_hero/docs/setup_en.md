@@ -1,7 +1,8 @@
-# APQuest Randomizer Setup Guide
+# Scratchcard Hero Randomizer Setup Guide
 
 ## Required Software
 
+- [Scratchcard Hero](https://store.steampowered.com/app/3622600/Scratchcard_Hero/)
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest)
 - [The Scratchcard Hero apworld](https://github.com/manadream/Archipelago/releases),
   if not bundled with your version of Archipelago

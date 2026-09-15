@@ -24,18 +24,16 @@ class ScratchcardHeroWorld(World):
     location_name_to_id = locations.LOCATION_NAME_TO_ID
     item_name_to_id = items.ITEM_NAME_TO_ID
 
-    origin_region_name = "Map 1"
+    origin_region_name = "Menu"
 
     def create_regions(self) -> None:
         regions.create_and_connect_regions(self)
-        locations.initialize()
         locations.create_all_locations(self)
 
     def set_rules(self) -> None:
         rules.set_all_rules(self)
 
     def create_items(self) -> None:
-        items.initialize()
         items.create_all_items(self)
 
     def create_item(self, name: str) -> items.ScratchcardHeroItem:

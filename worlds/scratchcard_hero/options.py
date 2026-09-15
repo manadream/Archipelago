@@ -12,6 +12,15 @@ class MustFindMaps(Toggle):
     display_name = "Must Find Maps"
 
 
+class StartWithFirstMap(Toggle):
+    """
+    Toggling this on gives you the first map when `Must Find Maps` is toggled on.
+    Toggling this off will mean your first map has to be in someone else's game.
+    """
+
+    display_name = "Start With First Map"
+
+
 class MapVictory(Range):
     """
     Number of Maps that must be completed to win the game.
@@ -31,24 +40,38 @@ class EndlessVictory(Range):
     Setting this to 0 disables Endless Mode and uses the Maps Completed To Win setting for Victory.
     """
 
-    display_name = "Map Level Victory"
+    display_name = "Endless Level Victory"
 
     range_start = 0
     range_end = 99
     default = 0
 
 
+class TrapChance(Range):
+    """
+    Percentage chance that any given Filler item will be replaced by a Trap.
+    """
+
+    display_name = "Trap Chance"
+
+    range_start = 0
+    range_end = 100
+    default = 0
+
+
 @dataclass
 class ScratchcardHeroOptions(PerGameCommonOptions):
     must_find_maps: MustFindMaps
+    start_with_first_map: StartWithFirstMap
     map_victory: MapVictory
     endless_victory: EndlessVictory
+    trap_chance: TrapChance
 
 
 option_groups = [
     OptionGroup(
         "Gameplay Options",
-        [MustFindMaps],
+        [TrapChance,MustFindMaps,StartWithFirstMap],
     ),
     OptionGroup(
         "Completion Options",
