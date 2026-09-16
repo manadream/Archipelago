@@ -3,6 +3,15 @@ from dataclasses import dataclass
 from Options import Choice, OptionGroup, PerGameCommonOptions, Range, Toggle
 
 
+class MustFindAddonStamps(Toggle):
+    """
+    Toggling this on locks card addon stamps behind checks (the cards themselves are already behind checks).
+    Toggling this off does not restrict the use of cards' addon stamps behind checks.
+    """
+
+    display_name = "Must Find Card Addon Stamps"
+
+
 class MustFindMaps(Toggle):
     """
     Toggling this on locks Maps 2, 3 and Endless Mode behind checks.
@@ -66,12 +75,13 @@ class ScratchcardHeroOptions(PerGameCommonOptions):
     map_victory: MapVictory
     endless_victory: EndlessVictory
     trap_chance: TrapChance
+    must_find_addon_stamps: MustFindAddonStamps
 
 
 option_groups = [
     OptionGroup(
         "Gameplay Options",
-        [TrapChance,MustFindMaps,StartWithFirstMap],
+        [TrapChance,MustFindAddonStamps,MustFindMaps,StartWithFirstMap],
     ),
     OptionGroup(
         "Completion Options",

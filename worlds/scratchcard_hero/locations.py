@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 
 from BaseClasses import ItemClassification, Location
 
-from .items import ScratchcardHeroItem
+from .items import ScratchcardHeroItem, ITEMS, CARD_ADDONS
 
 from .regions import REGIONS
 
@@ -32,6 +32,7 @@ class LOCATIONS:
     map_1_nodes = []
     map_2_nodes = []
     map_3_nodes = []
+    shop_locations = []
 
 class EVENTS:
     map_1_boss = ["Map 1 Boss Defeated", "Map 1 Completed"]
@@ -59,6 +60,11 @@ def _initialize():
                   LOCATION_NAME_TO_ID[loc] = len(LOCATION_NAME_TO_ID) + 1
           else:
               LOCATION_NAME_TO_ID[location] = len(LOCATION_NAME_TO_ID) + 1
+  num_shop_locations = 10 + len(ITEMS) + len(CARD_ADDONS) - len(LOCATION_NAME_TO_ID)
+  for i in range(1,num_shop_locations):
+      name = "Shop Item %d" % i
+      LOCATIONS.shop_locations.append(name)
+      LOCATION_NAME_TO_ID[name] = len(LOCATION_NAME_TO_ID) + 1
   for j in range(0,99):
       k = j+1
       EVENTS.endless[j] = ["Endless Level %d Defeated" % k, "Endless Level %d Completed" % k]
@@ -88,6 +94,12 @@ def create_regular_locations(world: ScratchcardHeroWorld) -> None:
     menu_locations = get_location_names_with_ids(["Menu"])
     menu.add_locations(menu_locations, ScratchcardHeroLocation)
 
+    shop_locations_index = 0
+    shop_locations_num_regions = 3
+    if world.options.endless_victory > 0:
+        shop_locations_num_regions = 4
+    shop_locations_per_region = int(len(LOCATIONS.shop_locations) / shop_locations_num_regions)
+
     map_1_location_names = [
         LOCATIONS.activist,
         LOCATIONS.alchemist,
@@ -99,6 +111,9 @@ def create_regular_locations(world: ScratchcardHeroWorld) -> None:
         LOCATIONS.spacer,
     ]
     map_1_location_names += LOCATIONS.map_1_nodes
+    for i in range(shop_locations_index,shop_locations_index+shop_locations_per_region):
+        map_1_location_names.append(LOCATIONS.shop_locations[i])
+    shop_locations_index += shop_locations_per_region
     map_1_locations = get_location_names_with_ids(map_1_location_names)
     map_1.add_locations(map_1_locations, ScratchcardHeroLocation)
 
@@ -112,6 +127,9 @@ def create_regular_locations(world: ScratchcardHeroWorld) -> None:
         LOCATIONS.zeb
     ]
     map_2_location_names += LOCATIONS.map_2_nodes
+    for i in range(shop_locations_index,shop_locations_index+shop_locations_per_region):
+        map_2_location_names.append(LOCATIONS.shop_locations[i])
+    shop_locations_index += shop_locations_per_region
     map_2_locations = get_location_names_with_ids(map_2_location_names)
     map_2.add_locations(map_2_locations, ScratchcardHeroLocation)
 
@@ -119,6 +137,20 @@ def create_regular_locations(world: ScratchcardHeroWorld) -> None:
         LOCATIONS.ears
     ]
     map_3_location_names += LOCATIONS.map_3_nodes
+    for i in range(shop_locations_index,shop_locations_index+shop_locations_per_region):
+        map_3_location_names.append(LOCATIONS.shop_locations[i])
+    shop_locations_index += shop_locations_per_region
+
+    if world.options.endless_victory > 0:
+        endless_location_names = []
+        for i in range(shop_locations_index,len(LOCATIONS.shop_locations)):
+            endless_location_names.append(LOCATIONS.shop_locations[i])
+        endless_locations = get_location_names_with_ids(endless_location_names)
+        endless.add_locations(endless_locations, ScratchcardHeroLocation)
+    else:
+        for i in range(shop_locations_index,len(LOCATIONS.shop_locations)):
+            map_3_location_names.append(LOCATIONS.shop_locations[i])
+
     map_3_locations = get_location_names_with_ids(map_3_location_names)
     map_3.add_locations(map_3_locations, ScratchcardHeroLocation)
 
