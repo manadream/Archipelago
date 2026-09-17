@@ -91,19 +91,36 @@ option_groups = [
 
 
 option_presets = {
-    "Standard": {
+    "Simple": {
         "must_find_maps": False,
+        "start_with_first_map": False,
         "map_victory": 3,
-        "endless_victory": 0
+        "endless_victory": 0,
+        "trap_chance": 50,
+        "must_find_addon_stamps": False,
     },
-    "Standard + Maps as checks": {
+    "Maps and Addons in Item Pool": {
         "must_find_maps": True,
+        "start_with_first_map": True,
         "map_victory": 3,
-        "endless_victory": 0
+        "endless_victory": 0,
+        "trap_chance": 50,
+        "must_find_addon_stamps": True,
     },
-    "Endless Level 5 + Maps as checks": {
+    "Endless Level 5 + Maps & Addons in Item Pool": {
         "must_find_maps": True,
+        "start_with_first_map": True,
         "map_victory": 3,
-        "endless_victory": 5
+        "endless_victory": 5,
+        "trap_chance": 50,
+        "must_find_addon_stamps": True,
     },
+    "All Possible Items in Pool + Endless Level 10": {
+        "must_find_maps": True,
+        "start_with_first_map": False,
+        "map_victory": 3,
+        "endless_victory": 10,
+        "trap_chance": 50,
+        "must_find_addon_stamps": True,
+    }
 }

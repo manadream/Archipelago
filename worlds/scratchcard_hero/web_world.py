@@ -8,7 +8,9 @@ class ScratchcardHeroWebWorld(WebWorld):
     game = "Scratchcard Hero"
 
     # You can choose between dirt, grass, grassFlowers, ice, jungle, ocean, partyTime, and stone.
-    theme = "grassFlowers"
+    theme = "partyTime"
+
+    bug_report_page = "https://github.com/manadream/Archipelago/issues"
 
     setup_en = Tutorial(
         "Multiworld Setup Guide",
