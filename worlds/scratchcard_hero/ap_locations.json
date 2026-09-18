@@ -1,0 +1,662 @@
+[
+    {
+        "id": 1,
+        "name": "Menu",
+        "region": "Menu"
+    },
+    {
+        "id": 1000,
+        "name": "Map 1 Node 1",
+        "region": "Map 1"
+    },
+    {
+        "id": 1001,
+        "name": "Map 1 Node 2",
+        "region": "Map 1"
+    },
+    {
+        "id": 1002,
+        "name": "Map 1 Node 3",
+        "region": "Map 1"
+    },
+    {
+        "id": 1003,
+        "name": "Map 1 Node 4",
+        "region": "Map 1"
+    },
+    {
+        "id": 1004,
+        "name": "Map 1 Node 5",
+        "region": "Map 1"
+    },
+    {
+        "id": 1005,
+        "name": "Map 1 Node 6",
+        "region": "Map 1"
+    },
+    {
+        "id": 1006,
+        "name": "Map 1 Node 7",
+        "region": "Map 1"
+    },
+    {
+        "id": 1007,
+        "name": "Map 1 Node 8",
+        "region": "Map 1"
+    },
+    {
+        "id": 1008,
+        "name": "Map 1 Node 9",
+        "region": "Map 1"
+    },
+    {
+        "id": 1009,
+        "name": "Map 1 Node 10",
+        "region": "Map 1"
+    },
+    {
+        "id": 1010,
+        "name": "Map 1 Node 11",
+        "region": "Map 1"
+    },
+    {
+        "id": 1011,
+        "name": "Map 1 Node 12",
+        "region": "Map 1"
+    },
+    {
+        "id": 1012,
+        "name": "Map 1 Node 13",
+        "region": "Map 1"
+    },
+    {
+        "id": 1013,
+        "name": "Map 1 Node 14",
+        "region": "Map 1"
+    },
+    {
+        "id": 1014,
+        "name": "Map 1 Node 15",
+        "region": "Map 1"
+    },
+    {
+        "id": 2000,
+        "name": "Map 2 Node 1",
+        "region": "Map 2"
+    },
+    {
+        "id": 2001,
+        "name": "Map 2 Node 2",
+        "region": "Map 2"
+    },
+    {
+        "id": 2002,
+        "name": "Map 2 Node 3",
+        "region": "Map 2"
+    },
+    {
+        "id": 2003,
+        "name": "Map 2 Node 4",
+        "region": "Map 2"
+    },
+    {
+        "id": 2004,
+        "name": "Map 2 Node 5",
+        "region": "Map 2"
+    },
+    {
+        "id": 2005,
+        "name": "Map 2 Node 6",
+        "region": "Map 2"
+    },
+    {
+        "id": 2006,
+        "name": "Map 2 Node 7",
+        "region": "Map 2"
+    },
+    {
+        "id": 2007,
+        "name": "Map 2 Node 8",
+        "region": "Map 2"
+    },
+    {
+        "id": 2008,
+        "name": "Map 2 Node 9",
+        "region": "Map 2"
+    },
+    {
+        "id": 2009,
+        "name": "Map 2 Node 10",
+        "region": "Map 2"
+    },
+    {
+        "id": 2010,
+        "name": "Map 2 Node 11",
+        "region": "Map 2"
+    },
+    {
+        "id": 2011,
+        "name": "Map 2 Node 12",
+        "region": "Map 2"
+    },
+    {
+        "id": 2012,
+        "name": "Map 2 Node 13",
+        "region": "Map 2"
+    },
+    {
+        "id": 2013,
+        "name": "Map 2 Node 14",
+        "region": "Map 2"
+    },
+    {
+        "id": 2014,
+        "name": "Map 2 Node 15",
+        "region": "Map 2"
+    },
+    {
+        "id": 2015,
+        "name": "Map 2 Node 16",
+        "region": "Map 2"
+    },
+    {
+        "id": 3000,
+        "name": "Map 3 Node 1",
+        "region": "Map 3"
+    },
+    {
+        "id": 3001,
+        "name": "Map 3 Node 2",
+        "region": "Map 3"
+    },
+    {
+        "id": 3002,
+        "name": "Map 3 Node 3",
+        "region": "Map 3"
+    },
+    {
+        "id": 3003,
+        "name": "Map 3 Node 4",
+        "region": "Map 3"
+    },
+    {
+        "id": 3004,
+        "name": "Map 3 Node 5",
+        "region": "Map 3"
+    },
+    {
+        "id": 3005,
+        "name": "Map 3 Node 6",
+        "region": "Map 3"
+    },
+    {
+        "id": 3006,
+        "name": "Map 3 Node 7",
+        "region": "Map 3"
+    },
+    {
+        "id": 3007,
+        "name": "Map 3 Node 8",
+        "region": "Map 3"
+    },
+    {
+        "id": 3008,
+        "name": "Map 3 Node 9",
+        "region": "Map 3"
+    },
+    {
+        "id": 3009,
+        "name": "Map 3 Node 10",
+        "region": "Map 3"
+    },
+    {
+        "id": 3010,
+        "name": "Map 3 Node 11",
+        "region": "Map 3"
+    },
+    {
+        "id": 3011,
+        "name": "Map 3 Node 12",
+        "region": "Map 3"
+    },
+    {
+        "id": 3012,
+        "name": "Map 3 Node 13",
+        "region": "Map 3"
+    },
+    {
+        "id": 3013,
+        "name": "Map 3 Node 14",
+        "region": "Map 3"
+    },
+    {
+        "id": 3014,
+        "name": "Map 3 Node 15",
+        "region": "Map 3"
+    },
+    {
+        "id": 3015,
+        "name": "Map 3 Node 16",
+        "region": "Map 3"
+    },
+    {
+        "id": 3016,
+        "name": "Map 3 Node 17",
+        "region": "Map 3"
+    },
+    {
+        "id": 3017,
+        "name": "Map 3 Node 18",
+        "region": "Map 3"
+    },
+    {
+        "id": 3018,
+        "name": "Map 3 Node 19",
+        "region": "Map 3"
+    },
+    {
+        "id": 4000,
+        "name": "Guyde",
+        "region": "Map 1"
+    },
+    {
+        "id": 4001,
+        "name": "Spacer",
+        "region": "Map 1"
+    },
+    {
+        "id": 4002,
+        "name": "Hawaiian Shirt Guy",
+        "region": "Map 1"
+    },
+    {
+        "id": 4003,
+        "name": "Gasoline Ghoul",
+        "region": "Map 1"
+    },
+    {
+        "id": 4004,
+        "name": "Hooded Hophead",
+        "region": "Map 1"
+    },
+    {
+        "id": 4005,
+        "name": "Shopkeep Diane",
+        "region": "Map 1"
+    },
+    {
+        "id": 4006,
+        "name": "Alchemist",
+        "region": "Map 1"
+    },
+    {
+        "id": 4007,
+        "name": "Vacant Violinist",
+        "region": "Map 2"
+    },
+    {
+        "id": 4008,
+        "name": "Suspicious Saphead",
+        "region": "Map 2"
+    },
+    {
+        "id": 4009,
+        "name": "The People's Politician",
+        "region": "Map 2"
+    },
+    {
+        "id": 4010,
+        "name": "Lena Lee",
+        "region": "Map 2"
+    },
+    {
+        "id": 4011,
+        "name": "Manny Moe",
+        "region": "Map 2"
+    },
+    {
+        "id": 4012,
+        "name": "Dreamy Druid",
+        "region": "Map 2"
+    },
+    {
+        "id": 4013,
+        "name": "Degen Zeb",
+        "region": "Map 2"
+    },
+    {
+        "id": 4014,
+        "name": "Ears McGuffin",
+        "region": "Map 3"
+    },
+    {
+        "id": 4015,
+        "name": "Anonymous Activist",
+        "region": "Map 1"
+    },
+    {
+        "id": 5000,
+        "name": "Shop Item 1",
+        "region": "Global"
+    },
+    {
+        "id": 5001,
+        "name": "Shop Item 2",
+        "region": "Global"
+    },
+    {
+        "id": 5002,
+        "name": "Shop Item 3",
+        "region": "Global"
+    },
+    {
+        "id": 5003,
+        "name": "Shop Item 4",
+        "region": "Global"
+    },
+    {
+        "id": 5004,
+        "name": "Shop Item 5",
+        "region": "Global"
+    },
+    {
+        "id": 5005,
+        "name": "Shop Item 6",
+        "region": "Global"
+    },
+    {
+        "id": 5006,
+        "name": "Shop Item 7",
+        "region": "Global"
+    },
+    {
+        "id": 5007,
+        "name": "Shop Item 8",
+        "region": "Global"
+    },
+    {
+        "id": 5008,
+        "name": "Shop Item 9",
+        "region": "Global"
+    },
+    {
+        "id": 5009,
+        "name": "Shop Item 10",
+        "region": "Global"
+    },
+    {
+        "id": 5010,
+        "name": "Shop Item 11",
+        "region": "Global"
+    },
+    {
+        "id": 5011,
+        "name": "Shop Item 12",
+        "region": "Global"
+    },
+    {
+        "id": 5012,
+        "name": "Shop Item 13",
+        "region": "Global"
+    },
+    {
+        "id": 5013,
+        "name": "Shop Item 14",
+        "region": "Global"
+    },
+    {
+        "id": 5014,
+        "name": "Shop Item 15",
+        "region": "Global"
+    },
+    {
+        "id": 5015,
+        "name": "Shop Item 16",
+        "region": "Global"
+    },
+    {
+        "id": 5016,
+        "name": "Shop Item 17",
+        "region": "Global"
+    },
+    {
+        "id": 5017,
+        "name": "Shop Item 18",
+        "region": "Global"
+    },
+    {
+        "id": 5018,
+        "name": "Shop Item 19",
+        "region": "Global"
+    },
+    {
+        "id": 5019,
+        "name": "Shop Item 20",
+        "region": "Global"
+    },
+    {
+        "id": 5020,
+        "name": "Shop Item 21",
+        "region": "Global"
+    },
+    {
+        "id": 5021,
+        "name": "Shop Item 22",
+        "region": "Global"
+    },
+    {
+        "id": 5022,
+        "name": "Shop Item 23",
+        "region": "Global"
+    },
+    {
+        "id": 5023,
+        "name": "Shop Item 24",
+        "region": "Global"
+    },
+    {
+        "id": 5024,
+        "name": "Shop Item 25",
+        "region": "Global"
+    },
+    {
+        "id": 5025,
+        "name": "Shop Item 26",
+        "region": "Global"
+    },
+    {
+        "id": 5026,
+        "name": "Shop Item 27",
+        "region": "Global"
+    },
+    {
+        "id": 5027,
+        "name": "Shop Item 28",
+        "region": "Global"
+    },
+    {
+        "id": 5028,
+        "name": "Shop Item 29",
+        "region": "Global"
+    },
+    {
+        "id": 5029,
+        "name": "Shop Item 30",
+        "region": "Global"
+    },
+    {
+        "id": 5030,
+        "name": "Shop Item 31",
+        "region": "Global"
+    },
+    {
+        "id": 5031,
+        "name": "Shop Item 32",
+        "region": "Global"
+    },
+    {
+        "id": 5032,
+        "name": "Shop Item 33",
+        "region": "Global"
+    },
+    {
+        "id": 5033,
+        "name": "Shop Item 34",
+        "region": "Global"
+    },
+    {
+        "id": 5034,
+        "name": "Shop Item 35",
+        "region": "Global"
+    },
+    {
+        "id": 5035,
+        "name": "Shop Item 36",
+        "region": "Global"
+    },
+    {
+        "id": 5036,
+        "name": "Shop Item 37",
+        "region": "Global"
+    },
+    {
+        "id": 5037,
+        "name": "Shop Item 38",
+        "region": "Global"
+    },
+    {
+        "id": 5038,
+        "name": "Shop Item 39",
+        "region": "Global"
+    },
+    {
+        "id": 5039,
+        "name": "Shop Item 40",
+        "region": "Global"
+    },
+    {
+        "id": 5040,
+        "name": "Shop Item 41",
+        "region": "Global"
+    },
+    {
+        "id": 5041,
+        "name": "Shop Item 42",
+        "region": "Global"
+    },
+    {
+        "id": 5042,
+        "name": "Shop Item 43",
+        "region": "Global"
+    },
+    {
+        "id": 5043,
+        "name": "Shop Item 44",
+        "region": "Global"
+    },
+    {
+        "id": 5044,
+        "name": "Shop Item 45",
+        "region": "Global"
+    },
+    {
+        "id": 5045,
+        "name": "Shop Item 46",
+        "region": "Global"
+    },
+    {
+        "id": 5046,
+        "name": "Shop Item 47",
+        "region": "Global"
+    },
+    {
+        "id": 5047,
+        "name": "Shop Item 48",
+        "region": "Global"
+    },
+    {
+        "id": 5048,
+        "name": "Shop Item 49",
+        "region": "Global"
+    },
+    {
+        "id": 5049,
+        "name": "Shop Item 50",
+        "region": "Global"
+    },
+    {
+        "id": 5050,
+        "name": "Shop Item 51",
+        "region": "Global"
+    },
+    {
+        "id": 5051,
+        "name": "Shop Item 52",
+        "region": "Global"
+    },
+    {
+        "id": 5052,
+        "name": "Shop Item 53",
+        "region": "Global"
+    },
+    {
+        "id": 5053,
+        "name": "Shop Item 54",
+        "region": "Global"
+    },
+    {
+        "id": 5054,
+        "name": "Shop Item 55",
+        "region": "Global"
+    },
+    {
+        "id": 5055,
+        "name": "Shop Item 56",
+        "region": "Global"
+    },
+    {
+        "id": 5056,
+        "name": "Shop Item 57",
+        "region": "Global"
+    },
+    {
+        "id": 5057,
+        "name": "Shop Item 58",
+        "region": "Global"
+    },
+    {
+        "id": 5058,
+        "name": "Shop Item 59",
+        "region": "Global"
+    },
+    {
+        "id": 5059,
+        "name": "Shop Item 60",
+        "region": "Global"
+    },
+    {
+        "id": 5060,
+        "name": "Shop Item 61",
+        "region": "Global"
+    },
+    {
+        "id": 5061,
+        "name": "Shop Item 62",
+        "region": "Global"
+    },
+    {
+        "id": 5062,
+        "name": "Shop Item 63",
+        "region": "Global"
+    },
+    {
+        "id": 5063,
+        "name": "Shop Item 64",
+        "region": "Global"
+    },
+    {
+        "id": 5064,
+        "name": "Shop Item 65",
+        "region": "Global"
+    }
+]

@@ -13,34 +13,35 @@ if TYPE_CHECKING:
 ITEM_NAME_TO_ID = {}
 ITEM_NAME_TO_CLASSIFICATION = {}
 ITEMS = []
-CARD_ADDONS = []
 TRAPS = []
 FILLER = []
 
-def _add_items_from_json(data, id_start, classification, destination):
-    i = id_start
-    for item in data:
-        ITEM_NAME_TO_ID[item] = i
-        ITEM_NAME_TO_CLASSIFICATION[item] = classification
-        i += 1
-        destination.append(item)
-
 
 def _initialize():
-    with open(os.path.join(os.path.dirname(__file__), 'items_progression.json'), 'r') as file:
-        _add_items_from_json(json.loads(file.read()), 1000, ItemClassification.progression, ITEMS)
-    with open(os.path.join(os.path.dirname(__file__), 'items_card.json'), 'r') as file:
-        _add_items_from_json(json.loads(file.read()), 2000, ItemClassification.useful, ITEMS)
-    with open(os.path.join(os.path.dirname(__file__), 'items_addon.json'), 'r') as file:
-        _add_items_from_json(json.loads(file.read()), 3000, ItemClassification.useful, CARD_ADDONS)
-    with open(os.path.join(os.path.dirname(__file__), 'items_gadget.json'), 'r') as file:
-        _add_items_from_json(json.loads(file.read()), 4000, ItemClassification.useful, ITEMS)
-    with open(os.path.join(os.path.dirname(__file__), 'items_filler.json'), 'r') as file:
-        _add_items_from_json(json.loads(file.read()), 5000, ItemClassification.filler, FILLER)
-    with open(os.path.join(os.path.dirname(__file__), 'items_trap.json'), 'r') as file:
-        _add_items_from_json(json.loads(file.read()), 6000, ItemClassification.trap, TRAPS)
+    with open(os.path.join(os.path.dirname(__file__), 'ap_items.json'), 'r') as file:
+        data = json.loads(file.read())
+        for item in data:
+            i_name = item["name"]
+            i_id = item["id"]
+            i_classification = None
+            match item["type"]:
+                case "progression":
+                    i_classification = ItemClassification.progression
+                case "filler":
+                    i_classification = ItemClassification.filler
+                    FILLER.append(i_name)
+                case "trap":
+                    i_classification = ItemClassification.trap
+                    TRAPS.append(i_name)
+                case _:
+                    i_classification = ItemClassification.useful
+            ITEMS.append(i_name)
+            ITEM_NAME_TO_ID[i_name] = i_id
+            ITEM_NAME_TO_CLASSIFICATION[i_name] = i_classification
+
 
 _initialize()
+
 
 class ScratchcardHeroItem(Item):
     game = "Scratchcard Hero"
@@ -61,11 +62,8 @@ def create_all_items(world: ScratchcardHeroWorld) -> None:
     itempool: list[Item] = []
 
     for item in ITEMS:
-      itempool.append(world.create_item(item))
-    
-    if world.options.must_find_addon_stamps:
-      for item in CARD_ADDONS:
-        itempool.append(world.create_item(item))
+        if "Addon" not in item or world.options.must_find_addon_stamps:
+            itempool.append(world.create_item(item))
 
     number_of_items = len(itempool)
     number_of_unfilled_locations = len(world.multiworld.get_unfilled_locations(world.player))
@@ -84,5 +82,5 @@ def create_all_items(world: ScratchcardHeroWorld) -> None:
         world.push_precollected(world.create_item("Map 3"))
         world.push_precollected(world.create_item("Endless"))
     else:
-      if world.options.start_with_first_map:
-        world.push_precollected(world.create_item("Map 1"))
+        if world.options.start_with_first_map:
+            world.push_precollected(world.create_item("Map 1"))

@@ -81,7 +81,7 @@ class ScratchcardHeroOptions(PerGameCommonOptions):
 option_groups = [
     OptionGroup(
         "Gameplay Options",
-        [TrapChance,MustFindAddonStamps,MustFindMaps,StartWithFirstMap],
+        [TrapChance, MustFindAddonStamps, MustFindMaps, StartWithFirstMap],
     ),
     OptionGroup(
         "Completion Options",

@@ -1,0 +1,612 @@
+[
+    {
+        "id": 0,
+        "name": "Map 1",
+        "type": "progression"
+    },
+    {
+        "id": 1,
+        "name": "Map 2",
+        "type": "progression"
+    },
+    {
+        "id": 2,
+        "name": "Map 3",
+        "type": "progression"
+    },
+    {
+        "id": 3,
+        "name": "Endless",
+        "type": "progression"
+    },
+    {
+        "id": 1000,
+        "name": "Filler",
+        "type": "filler"
+    },
+    {
+        "id": 2000,
+        "name": "Negative Status Trap",
+        "type": "trap"
+    },
+    {
+        "id": 2001,
+        "name": "dmg Trap",
+        "type": "trap"
+    },
+    {
+        "id": 2002,
+        "name": "Tax Trap",
+        "type": "trap"
+    },
+    {
+        "id": 3000,
+        "name": "Spinner Slot",
+        "type": "useful"
+    },
+    {
+        "id": 3001,
+        "name": "Simple Spinner",
+        "type": "useful"
+    },
+    {
+        "id": 3002,
+        "name": "Focus Spinner",
+        "type": "useful"
+    },
+    {
+        "id": 3003,
+        "name": "Heavy Spinner",
+        "type": "useful"
+    },
+    {
+        "id": 3004,
+        "name": "Speedy Spinner",
+        "type": "useful"
+    },
+    {
+        "id": 3005,
+        "name": "Soothing Spinner",
+        "type": "useful"
+    },
+    {
+        "id": 3006,
+        "name": "Lifeline Spinner",
+        "type": "useful"
+    },
+    {
+        "id": 3007,
+        "name": "Gadget Belt",
+        "type": "useful"
+    },
+    {
+        "id": 3008,
+        "name": "Plastic Fangs",
+        "type": "useful"
+    },
+    {
+        "id": 3009,
+        "name": "Shock Chews",
+        "type": "useful"
+    },
+    {
+        "id": 3010,
+        "name": "Fridge Salad",
+        "type": "useful"
+    },
+    {
+        "id": 3011,
+        "name": "Rizz Watch",
+        "type": "useful"
+    },
+    {
+        "id": 3012,
+        "name": "Low GI Gummies",
+        "type": "useful"
+    },
+    {
+        "id": 3013,
+        "name": "Immunity Shot",
+        "type": "useful"
+    },
+    {
+        "id": 3014,
+        "name": "Ping Pong Ball",
+        "type": "useful"
+    },
+    {
+        "id": 3015,
+        "name": "Member Card",
+        "type": "useful"
+    },
+    {
+        "id": 3016,
+        "name": "Pain Killers",
+        "type": "useful"
+    },
+    {
+        "id": 3017,
+        "name": "Strong Perfume",
+        "type": "useful"
+    },
+    {
+        "id": 3018,
+        "name": "Air Freshener",
+        "type": "useful"
+    },
+    {
+        "id": 3019,
+        "name": "Filtered Water",
+        "type": "useful"
+    },
+    {
+        "id": 3020,
+        "name": "LED Flashlight",
+        "type": "useful"
+    },
+    {
+        "id": 3021,
+        "name": "Religious Candle",
+        "type": "useful"
+    },
+    {
+        "id": 3022,
+        "name": "Cringe Tabloid",
+        "type": "useful"
+    },
+    {
+        "id": 3023,
+        "name": "Allergy Meds",
+        "type": "useful"
+    },
+    {
+        "id": 3024,
+        "name": "Cheap Charm",
+        "type": "useful"
+    },
+    {
+        "id": 3025,
+        "name": "Optical Illusion",
+        "type": "useful"
+    },
+    {
+        "id": 3026,
+        "name": "Snack Family Pack",
+        "type": "useful"
+    },
+    {
+        "id": 3027,
+        "name": "Marble Bag",
+        "type": "useful"
+    },
+    {
+        "id": 3028,
+        "name": "Pre-Workout Drink",
+        "type": "useful"
+    },
+    {
+        "id": 3029,
+        "name": "Memory Foam Pillow",
+        "type": "useful"
+    },
+    {
+        "id": 3030,
+        "name": "Staticky Balloons",
+        "type": "useful"
+    },
+    {
+        "id": 3031,
+        "name": "Fuzzy Duster",
+        "type": "useful"
+    },
+    {
+        "id": 3032,
+        "name": "Pre-Broken Mirror",
+        "type": "useful"
+    },
+    {
+        "id": 3033,
+        "name": "Trucker Hat",
+        "type": "useful"
+    },
+    {
+        "id": 3034,
+        "name": "Take a Penny",
+        "type": "useful"
+    },
+    {
+        "id": 3035,
+        "name": "Prize Capsule",
+        "type": "useful"
+    },
+    {
+        "id": 3036,
+        "name": "Lucky 7 Lotto",
+        "type": "useful"
+    },
+    {
+        "id": 3037,
+        "name": "Auto Abs",
+        "type": "useful"
+    },
+    {
+        "id": 3038,
+        "name": "Wind Up Toy",
+        "type": "useful"
+    },
+    {
+        "id": 3039,
+        "name": "Boring Catalog",
+        "type": "useful"
+    },
+    {
+        "id": 3040,
+        "name": "Pepper Spray",
+        "type": "useful"
+    },
+    {
+        "id": 3041,
+        "name": "Liquid Lunch",
+        "type": "useful"
+    },
+    {
+        "id": 3042,
+        "name": "Help Hotline Card",
+        "type": "useful"
+    },
+    {
+        "id": 3043,
+        "name": "Super Sours",
+        "type": "useful"
+    },
+    {
+        "id": 3044,
+        "name": "Life Saviors",
+        "type": "useful"
+    },
+    {
+        "id": 3045,
+        "name": "Strobe Light",
+        "type": "useful"
+    },
+    {
+        "id": 3046,
+        "name": "Loyalty Card",
+        "type": "useful"
+    },
+    {
+        "id": 3047,
+        "name": "Prepaid Phone Card",
+        "type": "useful"
+    },
+    {
+        "id": 3048,
+        "name": "Food Stamps",
+        "type": "useful"
+    },
+    {
+        "id": 3049,
+        "name": "Zen Booklet",
+        "type": "useful"
+    },
+    {
+        "id": 3050,
+        "name": "Peddler's Guide",
+        "type": "useful"
+    },
+    {
+        "id": 3051,
+        "name": "Charity Box",
+        "type": "useful"
+    },
+    {
+        "id": 3052,
+        "name": "Electric Bangle",
+        "type": "useful"
+    },
+    {
+        "id": 3053,
+        "name": "Spork Knife",
+        "type": "useful"
+    },
+    {
+        "id": 3054,
+        "name": "Shock Absorber",
+        "type": "useful"
+    },
+    {
+        "id": 3055,
+        "name": "Studded Wristband",
+        "type": "useful"
+    },
+    {
+        "id": 3056,
+        "name": "Party Poppers",
+        "type": "useful"
+    },
+    {
+        "id": 3057,
+        "name": "Face Slapper",
+        "type": "useful"
+    },
+    {
+        "id": 3058,
+        "name": "Candy Straw",
+        "type": "useful"
+    },
+    {
+        "id": 3059,
+        "name": "Cheap Sleep Aid",
+        "type": "useful"
+    },
+    {
+        "id": 3060,
+        "name": "Tiny Puzzle",
+        "type": "useful"
+    },
+    {
+        "id": 3061,
+        "name": "Dental Gum",
+        "type": "useful"
+    },
+    {
+        "id": 3062,
+        "name": "Inspirational Quote Book",
+        "type": "useful"
+    },
+    {
+        "id": 3063,
+        "name": "Book of Archons",
+        "type": "useful"
+    },
+    {
+        "id": 3064,
+        "name": "Card Case",
+        "type": "useful"
+    },
+    {
+        "id": 3065,
+        "name": "Plastic Flute",
+        "type": "useful"
+    },
+    {
+        "id": 3066,
+        "name": "Sun Tan Lotion",
+        "type": "useful"
+    },
+    {
+        "id": 3067,
+        "name": "Scratched Sunglasses",
+        "type": "useful"
+    },
+    {
+        "id": 3068,
+        "name": "Smelly Stickers",
+        "type": "useful"
+    },
+    {
+        "id": 3069,
+        "name": "Book of Peace",
+        "type": "useful"
+    },
+    {
+        "id": 4000,
+        "name": "Money Bags",
+        "type": "useful"
+    },
+    {
+        "id": 4001,
+        "name": "Snack 3",
+        "type": "useful"
+    },
+    {
+        "id": 4002,
+        "name": "Pot O' Cold",
+        "type": "useful"
+    },
+    {
+        "id": 4003,
+        "name": "Lucky Orchard",
+        "type": "useful"
+    },
+    {
+        "id": 4004,
+        "name": "TLC Ticket",
+        "type": "useful"
+    },
+    {
+        "id": 4005,
+        "name": "Power Play",
+        "type": "useful"
+    },
+    {
+        "id": 4006,
+        "name": "21 Electrastun",
+        "type": "useful"
+    },
+    {
+        "id": 4007,
+        "name": "Pachinko Paradise",
+        "type": "useful"
+    },
+    {
+        "id": 4008,
+        "name": "3DD3",
+        "type": "useful"
+    },
+    {
+        "id": 4009,
+        "name": "Auto Rewind",
+        "type": "useful"
+    },
+    {
+        "id": 4010,
+        "name": "Spell Search",
+        "type": "useful"
+    },
+    {
+        "id": 4011,
+        "name": "Junk",
+        "type": "useful"
+    },
+    {
+        "id": 4012,
+        "name": "Tic Tac Tackle",
+        "type": "useful"
+    },
+    {
+        "id": 4013,
+        "name": "Trash Collector",
+        "type": "useful"
+    },
+    {
+        "id": 4014,
+        "name": "Toxic Hold 'em",
+        "type": "useful"
+    },
+    {
+        "id": 4015,
+        "name": "Summoning Shot",
+        "type": "useful"
+    },
+    {
+        "id": 4016,
+        "name": "Paltry Padlock",
+        "type": "useful"
+    },
+    {
+        "id": 4017,
+        "name": "Gloom Ray",
+        "type": "useful"
+    },
+    {
+        "id": 4018,
+        "name": "Trace Ace",
+        "type": "useful"
+    },
+    {
+        "id": 4019,
+        "name": "Yin Yacht",
+        "type": "useful"
+    },
+    {
+        "id": 4020,
+        "name": "Nonodrain",
+        "type": "useful"
+    },
+    {
+        "id": 4021,
+        "name": "Dribble Doubler",
+        "type": "useful"
+    },
+    {
+        "id": 4022,
+        "name": "Heal or Deal",
+        "type": "useful"
+    },
+    {
+        "id": 5000,
+        "name": "3DD3 Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5001,
+        "name": "Power Play Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5002,
+        "name": "Lucky Orchard Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5003,
+        "name": "TLC Ticket Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5004,
+        "name": "21 Electrastun Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5005,
+        "name": "Snack 3 Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5006,
+        "name": "Pachinko Paradise Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5007,
+        "name": "Pot O' Cold Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5008,
+        "name": "Auto Rewind Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5009,
+        "name": "Spell Search Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5010,
+        "name": "Tic tac Tackle Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5011,
+        "name": "Trash Collector Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5012,
+        "name": "Toxic Holdem Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5013,
+        "name": "Summoning Shot Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5014,
+        "name": "Paltry Padlock Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5015,
+        "name": "Gloom Ray Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5016,
+        "name": "Trace Ace Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5017,
+        "name": "Yin Yacht Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5018,
+        "name": "Nonodrain Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5019,
+        "name": "Dribble Doubler Addon",
+        "type": "useful"
+    },
+    {
+        "id": 5020,
+        "name": "Heal or Deal Addon",
+        "type": "useful"
+    }
+]
