@@ -1,21 +1,21 @@
 [
     {
-        "id": 0,
+        "id": 1,
         "name": "Map 1",
         "type": "progression"
     },
     {
-        "id": 1,
+        "id": 2,
         "name": "Map 2",
         "type": "progression"
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Map 3",
         "type": "progression"
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Endless",
         "type": "progression"
     },
